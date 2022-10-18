@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-18 16:26:14</p>
+                <p class='attribute'><strong>Duration: </strong>22.85 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>TestCases.Remove_items_from_cart_test_file.RemoveFromCartTestcase</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_remove_items_from_cart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x008BDF13+2219795]
+	Ordinal0 [0x00852841+1779777]
+	Ordinal0 [0x0076423D+803389]
+	Ordinal0 [0x00766D04+814340]
+	Ordinal0 [0x00766BC2+814018]
+	Ordinal0 [0x00766E50+814672]
+	Ordinal0 [0x00794A2E+1002030]
+	Ordinal0 [0x007899ED+956909]
+	Ordinal0 [0x007AE7FC+1107964]
+	Ordinal0 [0x007894B4+955572]
+	Ordinal0 [0x007AEA14+1108500]
+	Ordinal0 [0x007BF192+1175954]
+	Ordinal0 [0x007AE616+1107478]
+	Ordinal0 [0x00787F89+950153]
+	Ordinal0 [0x00788F56+954198]
+	GetHandleVerifier [0x00BB2CB2+3040210]
+	GetHandleVerifier [0x00BA2BB4+2974420]
+	GetHandleVerifier [0x00956A0A+565546]
+	GetHandleVerifier [0x00955680+560544]
+	Ordinal0 [0x00859A5C+1808988]
+	Ordinal0 [0x0085E3A8+1827752]
+	Ordinal0 [0x0085E495+1827989]
+	Ordinal0 [0x008680A4+1867940]
+	BaseThreadInitThunk [0x76B96359+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x771E7B44+180]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Tatevik\PycharmProjects\AmazonWithSelenium\TestCases\Remove_items_from_cart_test_file.py", line 25, in test_remove_items_from_cart
+    self.cartObj.remove_all_items_from_cart()  # removes ALL products from the cart
+  File "C:\Users\Tatevik\PycharmProjects\AmazonWithSelenium\Sources\Pages\Amazon_shopping_cart_page_file.py", line 19, in remove_all_items_from_cart
+    deleteButtonElement.click()
+  File "C:\Users\Tatevik\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Tatevik\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Tatevik\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Tatevik\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x008BDF13+2219795]
+	Ordinal0 [0x00852841+1779777]
+	Ordinal0 [0x0076423D+803389]
+	Ordinal0 [0x00766D04+814340]
+	Ordinal0 [0x00766BC2+814018]
+	Ordinal0 [0x00766E50+814672]
+	Ordinal0 [0x00794A2E+1002030]
+	Ordinal0 [0x007899ED+956909]
+	Ordinal0 [0x007AE7FC+1107964]
+	Ordinal0 [0x007894B4+955572]
+	Ordinal0 [0x007AEA14+1108500]
+	Ordinal0 [0x007BF192+1175954]
+	Ordinal0 [0x007AE616+1107478]
+	Ordinal0 [0x00787F89+950153]
+	Ordinal0 [0x00788F56+954198]
+	GetHandleVerifier [0x00BB2CB2+3040210]
+	GetHandleVerifier [0x00BA2BB4+2974420]
+	GetHandleVerifier [0x00956A0A+565546]
+	GetHandleVerifier [0x00955680+560544]
+	Ordinal0 [0x00859A5C+1808988]
+	Ordinal0 [0x0085E3A8+1827752]
+	Ordinal0 [0x0085E495+1827989]
+	Ordinal0 [0x008680A4+1867940]
+	BaseThreadInitThunk [0x76B96359+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x771E7B44+180]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 22.85 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
