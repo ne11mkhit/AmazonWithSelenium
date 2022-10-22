@@ -23,8 +23,7 @@ if __name__ == "__main__":
         loader.loadTestsFromTestCase(RemoveFromCartTestcase),
         loader.loadTestsFromTestCase(EditCustomersNameTestCase)
     ))
-    # run test
+
     runner = TextTestRunner(verbosity=2)
     runner.run(suite)
 
-    # Todo Generate HTML report

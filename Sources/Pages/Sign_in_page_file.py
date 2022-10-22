@@ -31,8 +31,6 @@ class SignInPageClass(BasePageClass):
         signInButtonElement.click()
 
     def fast_sign_in(self, username=VariablesClass.get_username(), password=VariablesClass.get_password()):
-        """Opens Amazon.com sign in page and singes in.
-            We can specify a username and password, otherwise the default values will be used."""
         self.driver.get(VariablesClass.amazonSignInURL)
         # username
         self.fill_username_field(username)
